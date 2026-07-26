@@ -112,7 +112,7 @@
     }
 
     const phrases = [
-      "Polska Tolet"
+      "4wQe3pQXvYTbLPNjNiXEztk55sN8JXPR1vG92et2pump"
      
     ];
 
@@ -124,7 +124,7 @@
       const phrase = phrases[Math.floor(Math.random() * phrases.length)];
       el.textContent = phrase;
 
-      // random position, keeping text mostly on-screen
+      
       const top = Math.random() * 80 + 5;   // 5% - 85%
       const left = Math.random() * 70 + 5;  // 5% - 75%
       el.style.top = top + 'vh';
@@ -134,11 +134,11 @@
 
       layer.appendChild(el);
 
-      // remove after animation finishes
+      
       setTimeout(() => el.remove(), 2500);
     }
 
-    // spawn a new one every ~700ms, with slight randomness
+    
     function loopSpawn() {
       spawnText();
       setTimeout(loopSpawn, 500 + Math.random() * 600);
